@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أنواع المساعدات — مخيم الصقر</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+      <div class="sb-brand">
+        <img src="assets/logo-mark.png" alt="شعار مخيم الصقر">
+        <div>
+          <div class="name">مخيم الصقر</div>
+          <div class="role">إدارة المساعدات</div>
+        </div>
+      </div>
+      <ul class="sb-nav">
+        <li><a href="dashboard.html" data-page="dashboard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+          لوحة التحكم
+        </a></li>
+        <li><a href="families.html" data-page="families">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          العائلات
+        </a></li>
+        <li><a href="join-requests.html" data-page="join-requests">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
+          طلبات الانضمام
+        </a></li>
+        <li><a href="scan-distribution.html" data-page="scan-distribution">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+          توزيع بالمسح
+        </a></li>
+        <li><a href="individuals.html" data-page="individuals">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          الأفراد
+        </a></li>
+        <li><a href="categories.html" data-page="categories">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>
+          الفئات الخاصة
+        </a></li>
+        <li><a href="aid-log.html" data-page="aid-log">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M8 10h8M8 14h5"/></svg>
+          سجل المساعدات
+        </a></li>
+        <li><a href="aid-types.html" class="active" data-page="aid-types">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12a8 8 0 1 1-3-6.24"/><path d="M20 4v5h-5"/></svg>
+          أنواع المساعدات
+        </a></li>
+        <li><a href="zones.html" data-page="zones">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          الموقع الجغرافي
+        </a></li>
+        <li><a href="complaints.html" data-page="complaints">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          الشكاوى
+        </a></li>
+        <li class="admin-only"><a href="users.html" data-page="users">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          المستخدمون
+        </a></li>
+        <li class="admin-only"><a href="settings.html" data-page="settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          الإعدادات
+        </a></li>
+      </ul>
+      <div class="sb-user">
+        <div class="avatar">م</div>
+        <div class="info"><b id="sbUserName">...</b><span id="sbUserRole">...</span></div>
+      </div>
+      <a class="sb-logout" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>
+        تسجيل الخروج
+      </a>
+    </aside>
+    <main class="content">
+      <div class="topbar">
+        <button class="icon-btn" id="themeToggle2" aria-label="تبديل الوضع الليلي">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+      </div>
+      <div class="view">
+        <div class="page-head">
+          <div>
+            <h1 class="page-title">أنواع المساعدات</h1>
+            <p class="page-sub" id="aidTypesCountLabel">جارِ التحميل...</p>
+          </div>
+          <div class="toolbar">
+            <button class="tbtn tbtn-primary" type="button" data-open-modal="addTypeModal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              إضافة نوع
+            </button>
+          </div>
+        </div>
+
+        <div class="type-grid" id="aidTypesGrid">
+          <p style="color:var(--stone); text-align:center; padding:30px; grid-column:1/-1;">جارِ التحميل...</p>
+        </div>
+      </div>
+    </main>
+  </div>
+<div class="modal-overlay" id="addTypeModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3>إضافة نوع مساعدة</h3>
+      <button class="modal-close" type="button" data-close-modal="addTypeModal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <form class="modal-form" id="addTypeForm">
+      <label>اسم النوع<input type="text" id="typeName" required placeholder="مثال: بطانيات شتوية"></label>
+      <label>التصنيف
+        <select id="typeCategory"><option>غذائي</option><option>نظافة</option><option>رعاية أطفال</option><option>إغاثة</option><option>تجهيزات</option></select>
+      </label>
+      <label>اللون المميز
+        <div class="color-swatches">
+          <div class="color-swatch selected" data-color="gold" style="background:var(--gold);"></div>
+          <div class="color-swatch" data-color="copper" style="background:var(--copper);"></div>
+          <div class="color-swatch" data-color="teal" style="background:var(--teal);"></div>
+          <div class="color-swatch" data-color="slate" style="background:var(--slate);"></div>
+          <div class="color-swatch" data-color="burgundy" style="background:var(--burgundy);"></div>
+        </div>
+      </label>
+      <label>ملاحظات<textarea id="typeNotes" rows="2" placeholder="اختياري"></textarea></label>
+      <div class="modal-actions">
+        <button type="button" class="tbtn" data-close-modal="addTypeModal">إلغاء</button>
+        <button type="submit" class="tbtn tbtn-primary">حفظ النوع</button>
+      </div>
+      <p class="modal-note" id="addTypeNote"></p>
+    </form>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

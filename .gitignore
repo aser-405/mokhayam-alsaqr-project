@@ -1,0 +1,25 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+backend/config/db.php
+backend/seed_admin.php
+
+# Local/runtime files
+*.log
+logs/
+tmp/
+temp/
+uploads/
+exports/
+
+# Dependencies and tooling
+vendor/
+node_modules/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

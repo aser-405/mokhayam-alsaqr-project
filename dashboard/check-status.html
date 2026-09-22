@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تحقق من حالة تسجيلك — مخيم الصقر</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .check-wrap{
+    min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding:40px 20px;
+    background:
+      radial-gradient(circle at 20% 15%, rgba(201,150,62,0.18), transparent 45%),
+      radial-gradient(circle at 85% 80%, rgba(28,27,26,0.12), transparent 50%),
+      var(--cream);
+  }
+  .check-brand{display:flex; flex-direction:column; align-items:center; margin-bottom:30px; text-align:center;}
+  .check-brand img{width:64px; margin-bottom:14px;}
+  .check-brand h1{font-size:1.6rem; margin-bottom:6px;}
+  .check-brand p{color:var(--stone); font-size:.92rem; max-width:40ch;}
+  .check-card{
+    width:100%; max-width:440px; background:var(--card);
+    border:1px solid var(--line); border-radius:10px;
+    padding:34px; box-shadow:var(--shadow);
+  }
+  .check-btn{
+    width:100%; padding:14px; border:none; border-radius:6px; margin-top:6px;
+    background:var(--ink); color:var(--cream); font-weight:700; font-size:1rem; cursor:pointer;
+  }
+  .check-btn:hover{background:var(--gold-deep); color:var(--ink);}
+  .check-result{
+    margin-top:22px; padding:18px; border-radius:8px; text-align:center; display:none;
+  }
+  .check-result.show{display:block;}
+  .check-result.ok{background:rgba(47,111,107,0.1); border:1px solid var(--teal);}
+  .check-result.pending{background:var(--gold-pale); border:1px solid var(--gold);}
+  .check-result.no{background:rgba(140,58,58,0.08); border:1px solid var(--burgundy);}
+  .check-result h3{font-size:1.05rem; margin-bottom:6px;}
+  .check-result p{font-size:.88rem; color:var(--stone); line-height:1.7;}
+  .check-result a{color:var(--gold-deep); font-weight:700; text-decoration:none;}
+  .check-links{text-align:center; margin-top:22px; font-size:.85rem; color:var(--stone);}
+  .check-links a{color:var(--gold-deep); font-weight:700; text-decoration:none;}
+</style>
+</head>
+<body>
+
+<div class="check-wrap">
+  <div class="check-brand">
+    <img src="assets/logo-mark.png" alt="شعار مخيم الصقر">
+    <h1>تحقق من حالة تسجيلك</h1>
+    <p>عبّي رقم هويتك وبنقلّك فورًا إذا عائلتك مسجّلة بنظام مخيم الصقر أم لا.</p>
+  </div>
+
+  <div class="check-card">
+    <form class="modal-form" id="checkStatusForm">
+      <label>رقم الهوية
+        <input type="text" id="checkIdNumber" required placeholder="9XXXXXXXXX">
+      </label>
+      <button type="submit" class="check-btn">تحقق الآن</button>
+    </form>
+
+    <div class="check-result" id="checkResult"></div>
+  </div>
+
+  <div class="check-links">
+    عائلة جديدة؟ <a href="register.html">سجّل بياناتك من هون</a><br>
+    <a href="index.html" style="margin-top:6px; display:inline-block;">دخول الموظفين</a>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
